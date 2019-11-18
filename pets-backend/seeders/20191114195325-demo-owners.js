@@ -15,6 +15,12 @@ module.exports = {
         lastName: 'Ciarlante',
         createdAt: new Date(),
         updatedAt: new Date()
+      },
+      {
+        firstName: 'Sophi',
+        lastName: 'Ciarlante',
+        createdAt: new Date(),
+        updatedAt: new Date()
       }], {});
     
   },

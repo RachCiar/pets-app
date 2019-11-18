@@ -8,18 +8,21 @@ module.exports = {
         {
           name: 'Diesel',
           breed: 'Terrier',
+          ownerId: 1,
           createdAt: new Date(),
           updatedAt: new Date()
         },
         {
           name: 'Pepper',
           breed: 'Mut',
+          ownerId: 2,
           createdAt: new Date(),
           updatedAt: new Date()
         },
         {
           name: 'Boots',
           breed: 'Cat',
+          ownerId: 3,
           createdAt: new Date(),
           updatedAt: new Date()
         }], {});

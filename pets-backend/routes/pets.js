@@ -23,14 +23,19 @@ router.get('/:id', (req, res) => {
 
 // CREATE A PET
 router.post('/', (req, res) => {
-  Pet.create(req.body)
+
+  Pet.create({name: req.body.name, breed: req.body.breed, ownerId: req.body.ownerId})
+
     .then(() => {
       return Pet.findAll()
     })
     .then(pets => {
       res.json({ pets: pets })
     })
+    .catch(error =>
+      res.json({message:error}))
 })
+
 
 //UPDATE a pet
 router.put('/:id', (req, res) => {
